@@ -1,4 +1,4 @@
-﻿//var app = angular.module('myApp', ['ngRoute']);
+﻿var app = angular.module('myApp', ['ngRoute']);
 
 
 app.controller("EmployeeController", ['$scope', '$http', '$location', '$routeParams', function ($scope, $http, $location, $routeParams) {
