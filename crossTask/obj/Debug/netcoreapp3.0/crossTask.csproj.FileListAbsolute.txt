@@ -113,11 +113,11 @@ C:\Users\Asus\source\repos\crossTask\crossTask\bin\Debug\netcoreapp3.0\runtimes\
 C:\Users\Asus\source\repos\crossTask\crossTask\obj\Debug\netcoreapp3.0\crossTask.csprojAssemblyReference.cache
 C:\Users\Asus\source\repos\crossTask\crossTask\obj\Debug\netcoreapp3.0\staticwebassets\crossTask.StaticWebAssets.Manifest.cache
 C:\Users\Asus\source\repos\crossTask\crossTask\obj\Debug\netcoreapp3.0\staticwebassets\crossTask.StaticWebAssets.xml
-C:\Users\Asus\source\repos\crossTask\crossTask\obj\Debug\netcoreapp3.0\crossTask.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Asus\source\repos\crossTask\crossTask\obj\Debug\netcoreapp3.0\crossTask.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Asus\source\repos\crossTask\crossTask\obj\Debug\netcoreapp3.0\crossTask.AssemblyInfoInputs.cache
 C:\Users\Asus\source\repos\crossTask\crossTask\obj\Debug\netcoreapp3.0\crossTask.AssemblyInfo.cs
 C:\Users\Asus\source\repos\crossTask\crossTask\obj\Debug\netcoreapp3.0\crossTask.RazorTargetAssemblyInfo.cache
 C:\Users\Asus\source\repos\crossTask\crossTask\obj\Debug\netcoreapp3.0\crossTask.csproj.CopyComplete
 C:\Users\Asus\source\repos\crossTask\crossTask\obj\Debug\netcoreapp3.0\crossTask.dll
 C:\Users\Asus\source\repos\crossTask\crossTask\obj\Debug\netcoreapp3.0\crossTask.pdb
+C:\Users\Asus\source\repos\crossTask\crossTask\obj\Debug\netcoreapp3.0\crossTask.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Asus\source\repos\crossTask\crossTask\obj\Debug\netcoreapp3.0\crossTask.MvcApplicationPartsAssemblyInfo.cache

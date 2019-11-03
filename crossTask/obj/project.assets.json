@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.0": {
+      "AngularJS.Core/1.7.8": {
+        "type": "package"
+      },
+      "AngularJS.Route/1.7.8": {
+        "type": "package",
+        "dependencies": {
+          "AngularJS.Core": "1.7.8"
+        }
+      },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -2990,6 +2999,35 @@
     }
   },
   "libraries": {
+    "AngularJS.Core/1.7.8": {
+      "sha512": "hG7LF/fXLT/hOqr7RkSjZUu63Di5kGRngChP+dt7fmzv6wcaqMs+gN5cK1jbzAQaKBdlrkRixDAIbAbzttm8Og==",
+      "type": "package",
+      "path": "angularjs.core/1.7.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "angularjs.core.1.7.8.nupkg.sha512",
+        "angularjs.core.nuspec",
+        "content/Scripts/angular-mocks.js",
+        "content/Scripts/angular.js",
+        "content/Scripts/angular.min.js",
+        "content/Scripts/angular.min.js.map"
+      ]
+    },
+    "AngularJS.Route/1.7.8": {
+      "sha512": "sTl5xeCRVjJUe5UeHLhK0qSc0oeFIKvuPyEpj4d2jW0/g79FwVLryw3gIBucmKuogRtl1BMdhMbH3fVxvnbzBg==",
+      "type": "package",
+      "path": "angularjs.route/1.7.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "angularjs.route.1.7.8.nupkg.sha512",
+        "angularjs.route.nuspec",
+        "content/Scripts/angular-route.js",
+        "content/Scripts/angular-route.min.js",
+        "content/Scripts/angular-route.min.js.map"
+      ]
+    },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.0.0": {
       "sha512": "eDrNQlYPL5lw8DXMlEvo61VhkZ9DFq9/8Fds8+aaMa4nMtIJvwEwbFyYfJ+Zblh/8NNBkDQHkDD1p4i3g0HFWg==",
       "type": "package",
@@ -9320,6 +9358,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
+      "AngularJS.Core >= 1.7.8",
+      "AngularJS.Route >= 1.7.8",
       "Microsoft.AspNetCore.StaticFiles >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 3.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.0.0",
@@ -9367,6 +9407,14 @@
     "frameworks": {
       "netcoreapp3.0": {
         "dependencies": {
+          "AngularJS.Core": {
+            "target": "Package",
+            "version": "[1.7.8, )"
+          },
+          "AngularJS.Route": {
+            "target": "Package",
+            "version": "[1.7.8, )"
+          },
           "Microsoft.AspNetCore.StaticFiles": {
             "target": "Package",
             "version": "[2.2.0, )"

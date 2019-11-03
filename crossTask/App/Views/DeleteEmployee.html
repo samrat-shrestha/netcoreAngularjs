@@ -13,40 +13,26 @@
     <title></title>
 </head>
 <body ng-app="myApp">
-    <a href="#/AddEmployee" class="btn btn-primary btn-xs">Add New Employee</a>
-    <br /><br />
-    <div class="table-responsive">
-        <table id="mytable" class="table table-bordred table-striped">
-            <thead>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Address</th>
-            <th>DOB</th>
-            <!--<th>Department</th>-->
-            <th>Edit</th>
-            <th>Delete</th>
-            </thead>
-            <tbody>
-                <tr ng-repeat="item in ListOfEmployee">
-                    <td>{{item.EmployeeID}}</td>
-                    <td>{{item.Name}}</td>
-                    <td>{{item.Address}}</td>
-                    <td>{{item.DOB}}</td>
-                    <!--<td>{{item.DepartmentName}}</td>-->
-                    <td>
-                        <a class="btn btn-primary btn-xs" href="#/EditEmployee/{{item.EmployeeID}}">
-                            <span class="glyphicon glyphicon-pencil"></span>
-                        </a>
-                    </td>
-                    <td>
-                        <a class="btn btn-danger btn-xs" href="#/DeleteEmployee/{{item.EmployeeID}}">
-                            <span class="glyphicon glyphicon-trash"></span>
-                        </a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <div id="delete" ng-controller="EmployeeController">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                    <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
+                </div>
+                <div class="modal-body">
 
+                    <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Are you sure you want to delete Record for <b>{{FirstName + " "+LastName}}</b>?</div>
+
+                </div>
+                <div class="modal-footer ">
+                    <button type="submit" class="btn btn-success" ng-click="Delete()"><span class="glyphicon glyphicon-ok-sign"></span> Yes</button>
+                    <button type="button" class="btn btn-default" ng-click="Close()"><span class="glyphicon glyphicon-remove"></span> No</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
