@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\EmployeeList.html" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AngularJS.Core" Version="1.7.8" />
     <PackageReference Include="AngularJS.Route" Version="1.7.8" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
@@ -21,7 +25,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <None Include="wwwroot\Views\EmployeeList.html" />
+    <None Include="wwwroot\Scripts\App.js" />
+    <None Include="wwwroot\Scripts\EmployeeController.js" />
+    <None Include="wwwroot\Views\AddEmployee.html" />
+    <None Include="wwwroot\Views\DeleteEmployee.html" />
+    <None Include="wwwroot\Views\EditEmployee.html" />
   </ItemGroup>
 
 </Project>

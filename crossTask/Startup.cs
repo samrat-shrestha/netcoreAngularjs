@@ -53,7 +53,10 @@ namespace crossTask
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "Conference Planner API v1")
             );
 
-            app.UseDefaultFiles();
+            DefaultFilesOptions options = new DefaultFilesOptions();
+            options.DefaultFileNames.Clear();
+            options.DefaultFileNames.Add("Views/EmployeeList.html");
+            app.UseDefaultFiles(options);
             app.UseStaticFiles();
 
             app.UseHttpsRedirection();
